@@ -1,0 +1,91 @@
+html, body{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    /* border: solid 1px black; */
+    margin: 0px;
+    overflow: hidden;
+}
+/* 导航栏 */
+#top{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    border-bottom: black 1px solid;
+}
+/*左导航栏*/
+#nav-left{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#nav-left > p{
+    text-align: center;
+    padding-inline: 35px;
+    line-height: 60px;
+    margin: 0;
+}
+#nav-left > li{
+    text-align: center;
+    /* border-right: white 1px solid; */
+    line-height: 60px;
+    padding-inline: 35px;
+    font-size: medium;
+}
+/*右导航栏*/
+#nav-right{
+    margin: 0;
+    padding: 0;
+}
+/*登录面板*/
+#login-menu{
+    display: none;
+    list-style-type: none;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#login-menu > li{
+    border-left: black 1px solid;
+    height: 100%;
+    line-height: 60px;
+    padding-inline: 20px;
+    font-size: medium;
+}
+/*用户面板*/
+#user-menu{
+    display: flex;
+    height: 100%;
+    justify-content: end;
+}
+#user-menu > *{
+    margin: 0;
+    font-size: medium;
+}
+#user-menu > #user-head{
+    height: 85%;
+    border-radius: 50%;
+    margin-right: 5px;
+    align-self: center;
+}
+#user-menu > button{
+    margin: 3px 5px;
+    height: 30px;
+    align-self: center;
+}
+#user-menu > p{
+    padding: 15px 2px;
+    width: 80px;
+}
+/*内容*/
+#content{
+    flex-grow: 1;
+    border-width: 0;
+    padding: 0;
+    margin: 0;
+}

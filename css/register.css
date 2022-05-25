@@ -1,0 +1,49 @@
+/*register*/
+#register-page{
+    box-shadow: 0px 0px 20px #636e72;
+    background-color: white;
+    border-radius: 15px;
+    border: 0;
+}
+#register-title{
+    border-color: #636e72;
+}
+#register-form input{
+    border: #b2bec3 1px solid;
+    border-radius: 10px;
+    z-index: 1;
+    padding-left: 6px;
+}
+#register-form input+label{
+    z-index: 2;
+    font-size: medium;
+    color: #636e72;
+    background-color: transparent;
+    transition: 0.2s ease-out;
+}
+#register-form input:focus,#register-form input:valid{
+    outline: #74b9ff 1px solid;
+}
+#register-form input:focus+label,#register-form input:valid+label{
+    transform: translateY(-15px);
+    font-size: small;
+    color: #74b9ff;
+    background-color: white;
+}
+#register-form > #submit{
+    width: 250px;
+    background-color: #00b894;
+    border: #2d3436 solid 0px;
+    border-radius: 50px;
+    color:#dfe6e9;
+    font-size: larger;
+    font-weight: bolder;
+}
+#register-form > #submit:hover{
+    background-color: #00a383;
+    cursor: pointer;
+}
+#register-page > #footer:hover{
+    color: #6c5ce7;
+    cursor: pointer;
+}

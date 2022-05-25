@@ -1,0 +1,54 @@
+#register-page{
+    display: flex;
+    flex-direction: column;
+    border: 1px black solid;
+    margin: auto;
+    margin-top: 80px;
+    padding: 8px;
+    width: 300px;
+}
+#register-title{
+    display: flex;
+    border-bottom: black solid 1px;
+    height: 30px;
+}
+#register-title > p{
+    padding: 3px 8px;
+    margin: 0;
+}
+.spilt-line{
+    width: 0;
+    border-left: 1px black solid;
+    margin-block: 4px;
+}
+#register-form{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    margin: 5px;
+}
+#register-form > *{
+    margin-block: 16px;
+    height: 28px;
+}
+.input{
+    display:flex;
+    position: relative;
+}
+.input>input{
+    flex-grow: 1;
+}
+.input>label{
+    align-self: center;
+    position: absolute;
+    left: 5px;
+}
+#submit {
+    width: 30%;
+    height: 34px;
+    margin: auto;
+}
+#footer{
+    margin: 0;
+    width: 64px;
+}

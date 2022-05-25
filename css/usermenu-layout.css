@@ -1,0 +1,53 @@
+html, body{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+#top-user{
+    display: flex;
+    justify-content:space-between;
+    height: 150px;
+    padding: 0;
+    margin: 25px 40px;
+}
+#user-head-icon{
+    height: 100%;
+    border: 1px black solid;
+}
+#user-detail{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    flex-grow: 1;
+}
+#user-name{
+    margin-top: 60px;
+}
+#user-changebtn{
+    height: 40px;
+    width: 130px;
+    align-self: flex-end;
+}
+#bottom-user{
+    display: flex;
+    flex-direction: column;
+    border: 1px black solid; 
+    margin-inline: 30px;
+    height: 100%;
+    margin-bottom: 15px;
+}
+#bar{
+    display: flex;
+    border-bottom: 1px black solid;
+}
+#bar > p{
+    border-right: 1px black solid;
+    margin: 0;
+    padding: 5px 20px;
+}
+#user-content{
+    flex-grow: 1;
+}

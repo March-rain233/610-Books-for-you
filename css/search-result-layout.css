@@ -1,0 +1,157 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.spilt-line{
+    width: 0;
+    border-left: 1px black solid;
+    margin-block: 4px;
+}
+/*搜索*/
+#search{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px black solid;
+}
+/*搜索条*/
+.search-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: relative;
+    width: 80%;
+    height: 30px;
+    margin-top: 30px;
+}
+/*搜索分类*/
+.search-class{
+    position: relative;
+    background-color:white;
+    border: 1px black solid;
+    display: flex;
+    padding-left: 5px;
+    width: 105px;
+}
+.search-class > p{
+    margin: 0;
+    line-height: 30px;
+}
+.search-dropdown{
+    width: 25px;
+}
+.search-dropdown p{
+    text-align: center;
+    line-height: 30px;
+    margin: 0;
+}
+.search-dropdown-content{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px black solid;
+    margin: 0;
+    padding: 0;
+    left: -1px;
+    width: 110.5px;
+}
+.search-dropdown-content > p{
+    padding: 3px;
+    text-align: left;
+}
+.search-dropdown:hover .search-dropdown-content{
+    display: flex;
+}
+.search-bar > .search-input{
+    flex-grow: 1;
+}
+.search-bar > .search-submit{
+    width: 70px;
+}
+#search-priority{
+    display: flex;
+    width: 250px;
+    height: 50x;
+    border: 2px black solid;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+#search-priority > p{
+    margin: 0;
+    padding: 10px 0;
+}
+.search-priority-select{
+    flex-grow: 1;
+    text-align: center;
+}
+#search-num{
+    align-self: flex-start;
+    margin: 10px;
+}
+/*搜索结果列表*/
+#results{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    width: 100%;
+}
+/*搜索结果项*/
+.result-item{
+    display: flex;
+    margin-top: 20px;
+    height: 150px;
+    margin-inline: 20px;
+}
+/*预览图*/
+.item-preview{
+    width: 100px;
+    margin: 15px;
+}
+.item-cover{
+    width: 100%;
+    height: 100%;
+    border: 1px black solid;
+}
+.item-web-icon{
+    display: inline-block;
+    position: relative;
+    bottom: 50px;
+    left: 55px;
+    width: 50px;
+    height: 50px;
+    border: 1px black solid;
+}
+/*结果项细节*/
+.item-detail{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-block: 20px;
+}
+.item-name-group, .item-score-group, .item-notify {
+    display: flex;
+}
+.item-name-group > p, .item-score-group > p, .item-notify > p{
+    margin: 0 5px;
+}
+.item-score-group{
+    margin-top: 10px;
+}
+.item-notify{
+    margin-top: 30px;
+}
+.item-button-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80px;
+}
+.item-button-group > button{
+    height: 40px;
+    margin-block: 5px;
+}

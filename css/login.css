@@ -1,0 +1,52 @@
+/*login*/
+#login-page{
+    box-shadow: 0px 0px 20px #636e72;
+    background-color: white;
+    border-radius: 15px;
+    border: 0;
+}
+#login-title{
+    border-color: #636e72;
+}
+#login-page .spilt-line{
+    border-color: #636e72;
+}
+#login-form input{
+    border: #b2bec3 1px solid;
+    border-radius: 10px;
+    z-index: 1;
+    padding-left: 6px;
+}
+#login-form input+label{
+    z-index: 2;
+    font-size: medium;
+    color: #636e72;
+    background-color: transparent;
+    transition: 0.2s ease-out;
+}
+#login-form input:focus,#login-form input:valid{
+    outline: #74b9ff 1px solid;
+}
+#login-form input:focus+label,#login-form input:valid+label{
+    transform: translateY(-15px);
+    font-size: small;
+    color: #74b9ff;
+    background-color: white;
+}
+#login-form > #submit{
+    width: 250px;
+    background-color: #74b9ff;
+    border: #2d3436 solid 0px;
+    border-radius: 50px;
+    color:#dfe6e9;
+    font-size: larger;
+    font-weight: bolder;
+}
+#login-form > #submit:hover{
+    background-color: #0984e3;
+    cursor: pointer;
+}
+#login-page > #footer:hover, #login-title > a:hover{
+    color: #6c5ce7;
+    cursor: pointer;
+}

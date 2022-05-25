@@ -1,0 +1,24 @@
+/*usermenu*/
+#user-name{
+    font-size:larger;
+    font-weight:bolder;
+}
+#user-head-icon{
+    box-shadow: 0px 0px 5px #636e72;
+}
+#user-changebtn{
+    box-shadow: 0px 0px 5px #636e72;
+    background-color: #ff7675;
+    border: 1px solid #2d3436;
+    color: white;
+    font-weight: bolder;
+}
+#user-changebtn:hover{
+    background-color: #ff5858;
+    box-shadow: 0px 0px 10px #636e72;
+    cursor: pointer;
+}
+#bottom-user>#bar>*:hover{
+    color: #6c5ce7;
+    cursor: pointer;
+}

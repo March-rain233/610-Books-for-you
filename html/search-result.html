@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/search-result-layout.css">
+    <link rel="stylesheet" href="../css/search-result.css">
+    <title>SearchResult</title>
+</head>
+
+<body>
+    <div id="search">
+        <form class="search-bar">
+            <span class="search-class">
+                <p>搜索目标类</p>
+                <span class="search-dropdown">
+                    <p>▼</p>
+                    <div class="search-dropdown-content">
+                        <p>欧美高清</p>
+                        <p>日韩无码</p>
+                        <p>国产自拍</p>
+                    </div>
+                </span>
+            </span>
+            <input type="search" class="search-input">
+            <input type="submit" value="搜索" class="search-submit">
+        </form>
+        <div id="search-priority">
+            <p>优先级：</p>
+            <p class="search-priority-select">资源完整</p>
+            <span class="spilt-line"></span>
+            <p class="search-priority-select">无广告</p>
+            <span class="spilt-line"></span>
+            <p class="search-priority-select">免费</p>
+        </div>
+        <p id="search-num">
+            共xx项相关结果
+        </p>
+    </div>
+    <div id="results">
+        <div class="result-item">
+            <div class="item-preview">
+                <img class="item-cover" src="../data/default-cover.jpg">
+                <img class="item-web-icon" src="../data/default-web-icon.jpg">
+            </div>
+            <div class="item-detail">
+                <div class="item-name-group">
+                    <p class="item-name">白色相簿2</p>
+                    <p>-</p>
+                    <p class="item-web">Leaf</p>
+                </div>
+                <div class="item-score-group">
+                    <p class="item-score-stars">
+                        ★★★★★
+                    </p>
+                    <p class="item-score-text">10</p>
+                </div>
+                <div class="item-notify">
+                    <p>资源缺失</p>
+                    <span class="spilt-line"></span>
+                    <p>有软广告</p>
+                    <span class="spilt-line"></span>
+                    <p>部分免费</p>
+                </div>
+            </div>
+            <div class="item-button-group">
+                <button>跳转</button>
+                <button>评价</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

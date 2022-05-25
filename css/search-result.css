@@ -1,0 +1,43 @@
+/*search-result*/
+#search-priority{
+    background-color: white;
+}
+#search-priority>p:not(:first-child):hover{
+    background-color: #dfe6e9;
+    cursor: pointer;
+}
+.search-class{
+    background-color:white;
+}
+.search-dropdown>p:hover{
+    cursor: pointer;
+}
+.search-dropdown-content{
+    border-top: #2d3436 1px dotted;
+    background-color: white;
+}
+.search-dropdown-content>p:hover{
+    background-color:#dfe6e9;
+    cursor: pointer;
+}
+.result-item{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+.result-item:hover{
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+}
+.item-button-group{
+    margin-right: 25px;
+}
+.item-button-group>button:hover{
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+.item-button-group>button{
+    border-radius: 10px;
+    border: 0;
+    background-color: #2980b9;
+    color: white;
+}

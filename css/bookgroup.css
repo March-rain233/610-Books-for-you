@@ -1,0 +1,111 @@
+/*bookgroup*/
+#left{
+    border: 0;
+}
+#left.out{
+    transition: 0.3s ease;
+}
+#left.in{
+    width: 0;
+    transition: 0.3s ease;
+}
+#left>p{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color:#34495e;
+    color: #dfe6e9;
+    font-size: x-large;
+    font-weight: bolder;
+    cursor: pointer;
+}
+#left>p:hover{
+    background-color: #6c5ce7;
+    transition: 0.2s;
+}
+#left>p.active::after{
+    position: absolute;
+    right: 0;
+    width: 0;
+    border-width: 15px;
+    border-style: solid;
+    border-color: transparent #dfe6e9 transparent transparent;
+    content: " ";
+    z-index: -1;
+    animation: tri 0.1s ease-out;
+}
+@keyframes tri{
+    from{border-width: 0;}
+    tp{border-width: 15px;}
+}
+#left > p:first-child {
+    border-bottom: 0px #dfe6e9 solid;
+}
+#pull{
+    width: 20px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+#pull:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: 0.1s;
+}
+#right::before:hover{
+    background-color: rgba(0, 0, 0, 1);
+}
+#right{
+    background-color: #dfe6e9;
+}
+.group-item-content{
+    background-color: transparent;
+    margin: 0 10px;
+    z-index: -1;
+}
+.active{
+    z-index: 0;
+}
+.group-item-content.active::before {
+    content: "";
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   z-index: -1;
+   background-image: url('../data/default-bubble.png');
+   background-repeat: round;
+} 
+.group-item-user{
+    position: relative;
+    top: 80px;
+}
+.group-item-body{
+    border: 1px #b2bec3 solid;
+}
+.group-item-readbtn{
+    display: none;
+    background-color: #d63031;
+    border: 0;
+    color: white;
+    border-radius: 5px;
+}
+.item-right{
+    flex-direction: row-reverse;
+}
+.item-right .group-item-content{
+    position: relative;
+}
+.item-right .group-item-content::before{
+    transform: scaleX(-1);
+}
+#mask{
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgb(38, 44, 61));
+}
+#group{
+    overflow-y: auto;
+}

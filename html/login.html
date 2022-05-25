@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login-layout.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div id="login-page">
+        <div id="login-title">
+            <a>手机登录</a>
+            <span class="spilt-line"></span>
+            <a>密码登录</a>
+        </div>
+        <form id="login-form">
+            <div class="input">
+                <input type="text" id="user" name="user" required>
+                <label for="user">用户名</label>
+            </div>
+            <div class="input">
+                <input type="password" id="password" name="password" required>
+                <label for="password">密码</label>
+            </div>
+            <input type="submit" value="登录" id="submit">
+        </form>
+        <a id="footer">立即注册</a>
+    </div>
+    <script src="../javascript/jquery.min.js"></script>
+    <script src="../javascript/loginScript.js"></script>
+</body>
+
+</html>

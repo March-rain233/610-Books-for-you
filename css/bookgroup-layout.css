@@ -1,0 +1,121 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+}
+#left{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    border-right: 1px black solid;
+    width: 100px;
+}
+#left > p{
+    flex-grow: 1;
+    text-align: center;
+    writing-mode: vertical-lr;
+    line-height: 90px;
+    margin: 0;
+}
+#left > p:first-child {
+    border-bottom: 1px black solid;
+}
+#pull{
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+#right{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.group-item{
+    display: flex;
+    height: 200px;
+    margin-top: 50px;
+    margin-inline: 50px;
+    padding: 10px;
+}
+.group-item-user{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.group-item-user > img{
+    height: 100px;
+    width: 100px;
+    border: 1px black solid;
+}
+.group-item-user > p{
+    height: 20px;
+    margin: 5px 0;
+    text-align: center;
+}
+.group-item-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    /* flex-grow: 1; */
+    margin-inline: 30px;
+}
+.group-item-title{
+    margin: 0;
+    text-align: center;
+}
+.group-item-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-grow: 1;
+    max-height: 170px;
+}
+.group-item-preview{
+    display: none;
+    object-fit: contain;
+    height: 100px;
+    margin: 5px;
+}
+.group-item-text{
+    margin: 5px;
+    flex-grow: 1;
+}
+.group-item-readbtn{
+    margin: 3px;
+    width: 70px;
+    height: 30px;
+}
+#mask{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    align-self: center;
+    width: 100%;
+    bottom: 0;
+    height: 100px;
+}
+#mask>p{
+    margin-top: 60px;
+    text-align: center;
+    text-shadow: 0 1px 2px black;
+    color: white;
+    margin-inline: 10px;
+    border-bottom: rgba(255, 255, 255, 0.8) 1px solid;
+}
+#group{
+    position: relative;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#bottom-flag{
+    visibility: hidden;
+    width: 100%;
+}

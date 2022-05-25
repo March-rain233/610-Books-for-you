@@ -1,0 +1,76 @@
+/*form*/
+#top{
+    background: linear-gradient(to right, #185a9d, #43cea2);
+    border-bottom: black 0px solid;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+#top *{
+    color: #dfe6e9;  
+}
+#nav-left>li{
+    width: 50px;
+}
+#nav-left>li:hover{
+    transition: 0.2s;
+    background-color: #6c5ce7;
+    cursor: pointer;
+}
+#nav-left>li.active{
+    display: flex;
+    flex-direction: column;
+}
+#nav-left>li.active::after{
+    position: relative;
+    align-self: center;
+    top: -14px;
+    content: "";
+    width: 50px;
+    border-bottom: #f1c40f 4px solid;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    animation: bottomline 0.5s ease;
+}
+@keyframes bottomline{
+    from{width: 10px;}
+    to{width: 50px;}
+}
+#user-menu > button{
+    border: 0px;
+}
+#user-nickname{
+    color: white;
+    text-shadow: -1px 1px 10px #000000a0;
+    /* -webkit-text-stroke: 0.5px black; */
+    font-weight: bold;
+}
+#upload{
+    background-color: #f1c40f;
+    font-weight: bold;
+    color: white;
+    width: 90px;
+    border-radius: 50px;
+}
+#upload:hover, #quit:hover{
+    background-color: #6c5ce7;
+    cursor: pointer;
+}
+#quit{
+    background-color: #d63031;
+    color: #dfe6e9;
+}
+#user-head:hover{
+    transition:  all 0.3s linear;
+    transform: rotateZ(360deg);
+    cursor: pointer;
+}
+#login-menu{
+    background: #00b894;
+}
+#login-menu > li{
+    border-left: #2d3436 1px solid;
+    cursor: pointer;
+}
+#login-menu > li:hover{
+    background-color: #fd79a8;
+}
