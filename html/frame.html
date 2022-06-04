@@ -10,6 +10,47 @@
     <title>Frame</title>
 </head>
 <body>
+    <div id="guide">
+        <div class="tooltip" id="first">
+            <p style="font-size:xx-large;">①首页</p>
+            <p>可以搜索你所想要的书籍</p>
+            <button onclick="next()">下一个</button>
+        </div>
+        <div class="tooltip" id="second">
+            <p style="font-size:xx-large;">②书圈</p>
+            <p>可以看看其他书友的讨论</p>
+            <button onclick="next()">下一个</button>
+        </div>
+        <div class="tooltip" id="third">
+            <p style="font-size:xx-large;">③个人中心</p>
+            <p>来装饰一下自己的空间吧</p>
+            <button onclick="next()">下一个</button>
+        </div>
+        <div class="tooltip" id="fourth">
+            <p style="font-size:xx-large;">④上传资源</p>
+            <p>为社区的建设出一份自己的力量</p>
+            <button onclick="next()">完成</button>
+        </div>
+        <script>
+            let id = 0;
+            let pages = document.getElementsByClassName('tooltip');
+            init();
+            function init(){
+                for(let i = 1; i<pages.length;++i){
+                    pages[i].style.display = 'none';
+                }
+            }
+            function next(){
+                pages[id++].style.display = 'none';
+                if(id==pages.length){
+                    document.getElementById('guide').style.display = 'none';
+                }
+                else{
+                    pages[id].style.display = 'flex';
+                }
+            }
+        </script>
+    </div>
     <div id="top">
         <ul id="nav-left">
             <p>Logo 标题</p>
@@ -30,10 +71,17 @@
                 </li>
             </ul>
             <div id="user-menu">
+                <div id="user-dropdown">
+                    <img id="user-head" src="../data/default-userhead.jpg">
+                    <div id="user-dropdown-content">
+                        <p id="user-nickname">浅仓雨</p>
+                        <ul id="menu">
+                            <li id="usercenter">个人中心</li>
+                            <li id="quit">退出</li>
+                        </ul>
+                    </div>
+                </div>
                 <button id="upload">上传资源</button>
-                <img id="user-head" title="头像" src="../data/default-userhead.jpg">
-                <p id="user-nickname">浅仓雨</p>
-                <button id="quit">登出</button>
             </div>
         </div>
     </div>

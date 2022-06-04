@@ -12,7 +12,7 @@
     width: 50px;
 }
 #nav-left>li:hover{
-    transition: 0.2s;
+    transition: 0.3s;
     background-color: #6c5ce7;
     cursor: pointer;
 }
@@ -39,9 +39,10 @@
     border: 0px;
 }
 #user-nickname{
-    color: white;
-    text-shadow: -1px 1px 10px #000000a0;
-    /* -webkit-text-stroke: 0.5px black; */
+    color: #00b894 ;
+    font-size: large;
+    margin-top: 20px;
+    cursor: pointer;
     font-weight: bold;
 }
 #upload{
@@ -49,20 +50,35 @@
     font-weight: bold;
     color: white;
     width: 90px;
-    border-radius: 50px;
+    border-radius: 5px;
 }
-#upload:hover, #quit:hover{
+#upload:hover{
     background-color: #6c5ce7;
     cursor: pointer;
 }
-#quit{
-    background-color: #d63031;
-    color: #dfe6e9;
-}
-#user-head:hover{
-    transition:  all 0.3s linear;
-    transform: rotateZ(360deg);
+#user-dropdown:hover #user-head{
+    position: relative;
+    transition:  all 0.1s linear;
+    z-index: 10;
+    transform: scale(1.5) translateY(15px);
     cursor: pointer;
+}
+#user-dropdown-content{
+    border-radius: 10px;
+    border: #dfe6e9 1px solid;
+}
+#menu{
+    border-top:#dfe6e9 1px solid;
+    padding-top: 5px;
+}
+#menu>li{
+    color: #2d3436;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+#menu>li:hover{
+    background-color:whitesmoke;
+    transition: 0.3s;
 }
 #login-menu{
     background: #00b894;

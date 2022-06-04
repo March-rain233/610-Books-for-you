@@ -41,3 +41,9 @@
     background-color: #2980b9;
     color: white;
 }
+.item-cover{
+    border-radius: 5px;
+}
+.item-web-icon{
+    border-radius: 5px;
+}

@@ -20,6 +20,7 @@
     font-size: larger;
     font-weight: bolder;
     background-color: #00b894;
+    cursor: pointer;
 }
 .search-submit:hover{
     background-color: #6c5ce7;

@@ -63,10 +63,12 @@ function SpringInterpolator(newFactor){
 }
 function itemAnim(item) {
     let isRight = item.classList.contains('item-right');
+    let user = item.getElementsByClassName("group-item-user")[0];
     item = item.getElementsByClassName("group-item-content")[0];
     clearInterval(item.timer);
     const bezier = cubicBezier(0.38, 0, 0.38, 1);
-    const spring = SpringInterpolator(0.4);
+    const hspring = SpringInterpolator(0.4);
+    const wspring = SpringInterpolator(0.8);
     var perc = 0;
     const time = 2;
     const dt = 30.0;
@@ -74,19 +76,25 @@ function itemAnim(item) {
     const rotatePerc = 0.06;
     const oriDeg = isRight ? -75 :75;
     let flag = false;
-
+    const dis = 170;
+    user.style.opacity = 0;
+    user.style.transform = 'translate(' + (isRight ? dis : -dis) + 'px,' + '0' + ')';
     item.style['transform-origin'] = isRight ? "100% 84%" : "0 84%";
     item.timer = setInterval(() => {
         if(perc < 1){
             let t = bezier(perc);
 
             let deg = t <= rotatePerc ? oriDeg * (1 - t / rotatePerc) : 0;
-            let scale = 1 * spring(t);
+            let hscale = 1 * hspring(t);
+            let wscale = 1 * wspring(t);
 
-            item.style.transform = 'rotateZ(' + deg + 'deg) scale(' + scale + ')';
+            item.style.transform = 'rotateZ(' + deg + 'deg) scale(' + wscale + ',' + hscale + ')';
+
+            user.style.opacity = t;
+            user.style.transform = 'translate(' + (Math.max(1 - t * 3, 0))*(isRight ? dis : -dis) + 'px,' + '0' + ')';
+
             perc += dp;
-
-            if(scale > 0.1 && !flag){
+            if(hscale > 0.1 && !flag){
                 item.classList.add('active');
                 flag = true;
             }
@@ -94,6 +102,7 @@ function itemAnim(item) {
         else {
             clearInterval(item.timer);
             item.style.transform = 'rotateZ(0) scale(1)';
+            user.style.opacity = 1;
         }
     }, dt);
 }

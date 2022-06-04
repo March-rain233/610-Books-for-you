@@ -1,3 +1,30 @@
+var user;
+let page = document.getElementById("content");
+let navLeft = document.getElementById("nav-left");
+let home = navLeft.getElementsByTagName("li")[0];
+let group = navLeft.getElementsByTagName("li")[1];
+let quit = document.getElementById("quit");
+let loginMenu = document.getElementById("login-menu");
+home.onclick = ()=>{
+    changeContent("home.html");
+    activeNav(0);
+}
+group.onclick = ()=>{
+    changeContent("bookgroup.html");
+    activeNav(1);
+}
+quit.onclick = ()=>{
+    document.getElementById("user-menu").style.display = "none";
+    document.getElementById("login-menu").style.display = "flex";
+    changeContent("home.html");
+}
+loginMenu.getElementsByTagName("li")[0].onclick = ()=>changeContent("login.html");
+loginMenu.getElementsByTagName("li")[1].onclick = ()=>changeContent("register.html");
+document.getElementById("user-head").onclick = ()=>changeContent("usermenu.html");
+document.getElementById("usercenter").onclick = ()=>changeContent("usermenu.html");
+document.getElementById("user-nickname").onclick = ()=>changeContent("usermenu.html");
+activeNav(0);
+login('浅仓雨');
 function changeContent(url){
     clearNav();
     if(url == "home.html"){
@@ -32,27 +59,14 @@ function getHeadIcon(username, func){
         }
     );
 }
-let page = document.getElementById("content");
-let navLeft = document.getElementById("nav-left");
-let home = navLeft.getElementsByTagName("li")[0];
-let group = navLeft.getElementsByTagName("li")[1];
-let quit = document.getElementById("quit");
-let loginMenu = document.getElementById("login-menu");
-home.onclick = ()=>{
-    changeContent("home.html");
-    activeNav(0);
-}
-group.onclick = ()=>{
-    changeContent("bookgroup.html");
-    activeNav(1);
-}
-quit.onclick = ()=>{
-    document.getElementById("user-menu").style.display = "none";
-    document.getElementById("login-menu").style.display = "flex";
+function login(username){
+    user = username;
+    document.getElementById("user-menu").style.display = "flex";
+    document.getElementById("login-menu").style.display = "none";
+    document.getElementById("user-nickname").innerText = username;
+    getHeadIcon(username, (src)=>{
+        document.getElementById("user-head").src = src;
+    })
+    document.getElementById("user-head")
     changeContent("home.html");
 }
-loginMenu.getElementsByTagName("li")[0].onclick = ()=>changeContent("login.html");
-loginMenu.getElementsByTagName("li")[1].onclick = ()=>changeContent("register.html");
-document.getElementById("user-head").onclick = ()=>changeContent("usermenu.html");
-changeContent('home.html');
-activeNav(0);
