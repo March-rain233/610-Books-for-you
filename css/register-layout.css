@@ -11,6 +11,7 @@
     display: flex;
     border-bottom: black solid 1px;
     height: 30px;
+    margin-top: 10px;
 }
 #register-title > p{
     padding: 3px 8px;
@@ -24,14 +25,14 @@
 #register-form{
     display: flex;
     flex-direction: column;
-    height: 200px;
     margin: 5px;
 }
 #register-form > *{
-    margin-block: 16px;
     height: 28px;
+    margin-block: 25px;
 }
-.input{
+.input{    
+    height: 30px;
     display:flex;
     position: relative;
 }
@@ -41,12 +42,12 @@
 .input>label{
     align-self: center;
     position: absolute;
-    left: 5px;
+    left: 8px;
 }
 #submit {
     width: 30%;
     height: 34px;
-    margin: auto;
+    align-self: center;
 }
 #footer{
     margin: 0;

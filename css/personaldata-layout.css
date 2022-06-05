@@ -1,0 +1,39 @@
+body,html{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#content{
+    position: relative;
+    width: 90%;
+    border: 1px solid whitesmoke;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+#head{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: -30px;
+    left: 20px;
+}
+#firstline{
+    display: flex;
+    margin-left: 150px;
+}
+#attributes{
+    margin: 0;
+    padding: 0;
+    margin-left: 150px;
+    list-style: none;
+}
+#attributes>li{
+    display: flex;
+    border-bottom: 1px gray solid;
+}

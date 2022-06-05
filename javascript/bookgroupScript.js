@@ -75,6 +75,7 @@ function itemAnim(item) {
     const dp = dt / (time * 1000.0);
     const rotatePerc = 0.06;
     const oriDeg = isRight ? -75 :75;
+    const opaBezier = cubicBezier(0,0,0,1);
     let flag = false;
     const dis = 170;
     user.style.opacity = 0;
@@ -90,7 +91,7 @@ function itemAnim(item) {
 
             item.style.transform = 'rotateZ(' + deg + 'deg) scale(' + wscale + ',' + hscale + ')';
 
-            user.style.opacity = t;
+            user.style.opacity = opaBezier(Math.min(perc * time/1.5, 1));
             user.style.transform = 'translate(' + (Math.max(1 - t * 3, 0))*(isRight ? dis : -dis) + 'px,' + '0' + ')';
 
             perc += dp;

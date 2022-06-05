@@ -15,11 +15,12 @@ group.onclick = ()=>{
 }
 quit.onclick = ()=>{
     document.getElementById("user-menu").style.display = "none";
-    document.getElementById("login-menu").style.display = "flex";
+    document.getElementById("login").style.display = "block";
     changeContent("home.html");
 }
-loginMenu.getElementsByTagName("li")[0].onclick = ()=>changeContent("login.html");
-loginMenu.getElementsByTagName("li")[1].onclick = ()=>changeContent("register.html");
+document.getElementById("login").onclick = ()=>changeContent("login.html");
+// loginMenu.getElementsByTagName("li")[0].onclick = ()=>changeContent("login.html");
+// loginMenu.getElementsByTagName("li")[1].onclick = ()=>changeContent("register.html");
 document.getElementById("user-head").onclick = ()=>changeContent("usermenu.html");
 document.getElementById("usercenter").onclick = ()=>changeContent("usermenu.html");
 document.getElementById("user-nickname").onclick = ()=>changeContent("usermenu.html");
@@ -62,11 +63,18 @@ function getHeadIcon(username, func){
 function login(username){
     user = username;
     document.getElementById("user-menu").style.display = "flex";
-    document.getElementById("login-menu").style.display = "none";
+    document.getElementById("login").style.display = "none";
     document.getElementById("user-nickname").innerText = username;
     getHeadIcon(username, (src)=>{
         document.getElementById("user-head").src = src;
     })
     document.getElementById("user-head")
     changeContent("home.html");
+}
+function search(text){
+    changeContent("search-result.html");
+    document.getElementById("content").onload = ()=>{
+        let sub = document.getElementById("content").contentWindow;
+        sub.search(text);
+    }
 }

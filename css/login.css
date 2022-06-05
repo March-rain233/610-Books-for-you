@@ -47,7 +47,7 @@
     transition: 0.3s;
     cursor: pointer;
 }
-#login-page > #footer:hover, #login-title > a:hover{
+#login-page > #footer:hover{
     color: #6c5ce7;
     cursor: pointer;
 }

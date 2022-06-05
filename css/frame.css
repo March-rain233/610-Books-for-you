@@ -1,6 +1,6 @@
 /*form*/
 #top{
-    background: linear-gradient(to right, #185a9d, #43cea2);
+    background-color: #1F1F2B;
     border-bottom: black 0px solid;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
     z-index: 1;
@@ -23,17 +23,16 @@
 #nav-left>li.active::after{
     position: relative;
     align-self: center;
-    top: -14px;
+    top: 1px;
     content: "";
-    width: 50px;
-    border-bottom: #f1c40f 4px solid;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    width: 70%;
+    border-bottom: #FBC300 4px solid;
+    border-radius: 25px;
     animation: bottomline 0.5s ease;
 }
 @keyframes bottomline{
     from{width: 10px;}
-    to{width: 50px;}
+    to{width: 70%;}
 }
 #user-menu > button{
     border: 0px;
@@ -45,16 +44,25 @@
     cursor: pointer;
     font-weight: bold;
 }
-#upload{
-    background-color: #f1c40f;
-    font-weight: bold;
+#upload,#login{
+    background-color: #FBC300;
+    font-weight: bolder;
     color: white;
     width: 90px;
     border-radius: 5px;
 }
-#upload:hover{
+#upload:hover,#login:hover{
     background-color: #6c5ce7;
     cursor: pointer;
+}
+#login{
+    margin: 3px 5px;
+    height: 30px;
+    align-self: center;
+    border: 0;
+}
+#user-head{
+    transition: 0.1s;
 }
 #user-dropdown:hover #user-head{
     position: relative;

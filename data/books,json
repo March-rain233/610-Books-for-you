@@ -1,8 +1,0 @@
-{
-    books:[
-        {
-            name:'白色相簿2', 
-            cover:'../data/default-cover.jpg', 
-            icon:'../data/default-web-icon.jpg'}
-    ]
-}

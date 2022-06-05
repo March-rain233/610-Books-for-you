@@ -1,4 +1,6 @@
 document.getElementsByClassName("search-submit")[0].onclick = ()=>{
-    parent.changeContent("search-result.html");
+    if(document.getElementsByClassName('search-input')[0].value == '')
+        return;
+    parent.search(document.getElementsByClassName('search-input')[0].value);
     return false;
 }

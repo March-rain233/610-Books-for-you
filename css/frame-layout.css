@@ -21,26 +21,31 @@ body{
 #nav-left{
     display: flex;
     list-style-type: none;
+    position: relative;
     margin: 0;
     padding: 0;
+    margin-left: 45px;
 }
-#nav-left > p{
-    text-align: center;
-    padding-inline: 35px;
-    line-height: 60px;
-    margin: 0;
+#nav-left::before{
+    content: " ";
+    background-image: url('../data/logo-outline.png');
+    background-repeat: round;
+    width: 172px;
+    margin-inline: 30px;
 }
 #nav-left > li{
     text-align: center;
     /* border-right: white 1px solid; */
-    line-height: 60px;
-    padding-inline: 35px;
+    line-height: 45px;
+    padding-inline: 30px;
     font-size: medium;
 }
 /*右导航栏*/
 #nav-right{
     margin: 0;
     padding: 0;
+    display: flex;
+    margin-right: 50px;
 }
 /*登录面板*/
 #login-menu{
@@ -86,10 +91,12 @@ body{
 }
 #user-dropdown:hover>#user-dropdown-content,#user-dropdown-content:hover{
     display: flex;
+    opacity: 1;
 }
 #user-dropdown{
     height: 100%;
     position: relative;
+    opacity: 1;
 }
 #user-dropdown-content{
     position: absolute;
@@ -101,6 +108,7 @@ body{
     background-color: white;
     padding-block: 5px;
     width: 180px;
+    opacity: 0;
 }
 #menu{
     list-style: none;

@@ -109,3 +109,8 @@
 #group{
     overflow-y: auto;
 }
+.group-item-user>img{
+    border-radius: 25px;
+    box-shadow: 0 0 10px #0000009b;
+    border: 0;
+}

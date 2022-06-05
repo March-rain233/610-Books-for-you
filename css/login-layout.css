@@ -11,6 +11,7 @@
     display: flex;
     border-bottom: black solid 1px;
     height: 30px;
+    margin-top: 10px;
 }
 #login-title > a{
     padding: 3px 8px;
@@ -24,14 +25,13 @@
 #login-form{
     display: flex;
     flex-direction: column;
-    height: 200px;
     margin: 5px;
 }
 #login-form > *{
-    margin-block: 16px;
-    height: 28px;
+    margin-block: 25px;
 }
 .input{
+    height: 30px;
     display:flex;
     position: relative;
 }
@@ -46,9 +46,8 @@
 #submit {
     width: 30%;
     height: 34px;
-    margin: auto;
+    align-self: center;
 }
 #footer{
     margin: 0;
-    width: 64px;
 }
