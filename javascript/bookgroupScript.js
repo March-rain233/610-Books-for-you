@@ -92,7 +92,7 @@ function itemAnim(item) {
             item.style.transform = 'rotateZ(' + deg + 'deg) scale(' + wscale + ',' + hscale + ')';
 
             user.style.opacity = opaBezier(Math.min(perc * time/1.5, 1));
-            user.style.transform = 'translate(' + (Math.max(1 - t * 3, 0))*(isRight ? dis : -dis) + 'px,' + '0' + ')';
+            user.style.transform = 'translate(' + (1 -opaBezier(Math.min(perc * time/0.3, 1)))*(isRight ? dis : -dis) + 'px,' + '0' + ')';
 
             perc += dp;
             if(hscale > 0.1 && !flag){

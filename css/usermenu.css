@@ -1,14 +1,16 @@
 /*usermenu*/
 #user-name{
-    font-size:larger;
+    font-size:x-large;
     font-weight:bolder;
 }
 #user-head-icon{
     box-shadow: 0px 0px 5px #636e72;
+    border: 0;
+    border-radius: 25px;
 }
 #user-changebtn{
     box-shadow: 0px 0px 5px #636e72;
-    background-color: #ff7675;
+    background-color: #00b894;
     border: 1px solid #2d3436;
     color: white;
     font-weight: bolder;
@@ -18,7 +20,15 @@
     box-shadow: 0px 0px 10px #636e72;
     cursor: pointer;
 }
-#bottom-user>#bar>*:hover{
-    color: #6c5ce7;
+.active, #bottom-user>#bar>*:hover{
+    background-color: #6c5ce7;
     cursor: pointer;
+}
+#bar{
+    background-color: #2d3436;
+}
+#bar>p{
+    color: white;
+    width: 70px;
+    text-align: center;
 }

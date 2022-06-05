@@ -4,6 +4,7 @@ body{
     justify-content: center;
     align-items: center;
     margin: 0;
+    overflow-y:scroll;
 }
 .spilt-line{
     width: 0;
@@ -75,9 +76,7 @@ body{
 }
 #search-priority{
     display: flex;
-    width: 250px;
     height: 50x;
-    border: 2px black solid;
     margin-top: 20px;
     padding-left: 10px;
 }

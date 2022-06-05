@@ -2,6 +2,7 @@ body,html{
     padding: 0;
     margin: 0;
     height: 100%;
+    background-color: whitesmoke;
 }
 body{
     display: flex;
@@ -15,6 +16,8 @@ body{
     margin-top: 50px;
     display: flex;
     flex-direction: column;
+    background-color: white;
+    flex-grow: 1;
 }
 #head{
     position: absolute;
@@ -22,10 +25,33 @@ body{
     height: 100px;
     top: -30px;
     left: 20px;
+    border-radius: 5px;
+}
+#head::before{
+    content: '修改我的头像';
+    position: absolute;
+    background-color: black;
 }
 #firstline{
     display: flex;
     margin-left: 150px;
+}
+#name{
+    font-size: x-large;
+    font-weight: bold;
+    margin-right: 20px;
+}
+.edit{
+    font-size: small;
+    align-self: center;
+    color:mediumblue;
+    cursor: pointer;
+}
+#back{
+    position:absolute;
+    right: 20px;
+    color: gray;
+    cursor: pointer;
 }
 #attributes{
     margin: 0;
@@ -35,5 +61,11 @@ body{
 }
 #attributes>li{
     display: flex;
-    border-bottom: 1px gray solid;
+    border-bottom: 1px gainsboro solid;
+    margin-right: 10px;
+    padding-block: 20px;
+}
+#attributes>li>p:first-child{
+    font-weight: bold;
+    width: 200px;
 }
