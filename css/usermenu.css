@@ -20,15 +20,91 @@
     box-shadow: 0px 0px 10px #636e72;
     cursor: pointer;
 }
-.active, #bottom-user>#bar>*:hover{
+.active,#bottom-user>#bar>*:hover{
     background-color: #6c5ce7;
     cursor: pointer;
-}
-#bar{
-    background-color: #2d3436;
 }
 #bar>p{
     color: white;
     width: 70px;
     text-align: center;
+    border-right: 1px solid #2d3436;
+}
+#bar{
+    background-color: #2d3436;
+}
+
+.item-preview{
+    width: 100px;
+    margin: 15px;
+}
+.item-cover{
+    width: 100%;
+    height: 100%;
+    border: 1px black solid;
+}
+.item-web-icon{
+    display: inline-block;
+    position: relative;
+    bottom: 50px;
+    left: 55px;
+    width: 50px;
+    height: 50px;
+    border: 1px black solid;
+}
+/*结果项细节*/
+.item-detail{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-block: 20px;
+}
+.item-name-group, .item-score-group, .item-notify {
+    display: flex;
+}
+.item-name-group > p, .item-score-group > p, .item-notify > p{
+    margin: 0 5px;
+}
+.item-score-group{
+    margin-top: 10px;
+}
+.item-notify{
+    margin-top: 30px;
+}
+.item-button-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80px;
+}
+.item-button-group > button{
+    height: 40px;
+    margin-block: 5px;
+}
+.result-item{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+.result-item:hover{
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+}
+.item-button-group{
+    margin-right: 25px;
+}
+.item-button-group>button:hover{
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+.item-button-group>button{
+    border-radius: 10px;
+    border: 0;
+    background-color: #2980b9;
+    color: white;
+}
+.item-cover{
+    border-radius: 5px;
+}
+.item-web-icon{
+    border-radius: 5px;
 }

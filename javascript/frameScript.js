@@ -24,6 +24,7 @@ document.getElementById("login").onclick = ()=>changeContent("login.html");
 document.getElementById("user-head").onclick = ()=>changeContent("usermenu.html");
 document.getElementById("usercenter").onclick = ()=>changeContent("usermenu.html");
 document.getElementById("user-nickname").onclick = ()=>changeContent("usermenu.html");
+document.getElementById("upload").onclick = ()=>changeContent("upload.html");
 activeNav(0);
 login('浅仓雨');
 function changeContent(url){

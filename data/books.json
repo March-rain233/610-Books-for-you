@@ -57,7 +57,7 @@
         },
         {
             "name":"玫瑰之下",
-            "cover":"../data/之下-晋江文学城.png",
+            "cover":"../data/玫瑰之下-晋江文学城.png",
             "icon":"../data/晋江文学城.png",
             "webname":"晋江文学城",
             "score":"9.6",
@@ -212,7 +212,7 @@
         {
             "name":"三体(全集)",
             "cover":"../data/三体-qq阅读.png",
-            "icon":"../data/阅读.png",
+            "icon":"../data/QQ阅读.png",
             "webname":"QQ阅读",
             "score":"9.7",
             "web":"https://book.qq.com/book-detail/695233",
@@ -223,7 +223,7 @@
         {
             "name":"余生，请多指教(全集)",
             "cover":"../data/余生，请多指教-qq阅读.png",
-            "icon":"../data/阅读.png",
+            "icon":"../data/QQ阅读.png",
             "webname":"QQ阅读",
             "score":"9.7",
             "web":"https://book.qq.com/book-detail/41745878",
@@ -234,7 +234,7 @@
         {
             "name":"云边有个小卖部",
             "cover":"../data/云边有个小卖部-qq阅读.png",
-            "icon":"../data/阅读.png",
+            "icon":"../data/QQ阅读.png",
             "webname":"QQ阅读",
             "score":"9.7",
             "web":"https://book.qq.com/book-detail/23233558",

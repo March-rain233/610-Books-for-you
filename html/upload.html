@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/upload-layout.css">
+    <link rel="stylesheet" href="../css/upload.css">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div class="line">
+            <p>作品名称：</p>
+            <input id="name" type="text">
+        </div>
+        <div class="line">
+            <p>网站名称：</p>
+            <input id="webname" type="text">
+        </div>
+        <div class="line">
+            <p>链接：</p>
+            <input id="web" type="text">
+        </div>
+        <div class="line">
+            <p>资源完整性：</p>
+            <input type="radio" id="complete" name="miss" value="false" checked>
+            <label for="complete">完整</label>
+            <input id="miss" type="radio" name="miss" value="false">
+            <label for="miss">缺失</label>
+        </div>
+        <div class="line">
+            <p>广告：</p>
+            <input id="noneAd" type="radio" name="ad" value="none" checked>
+            <label for="noneAd">无广告</label>
+            <input id="softAd" type="radio" name="ad" value="none">
+            <label for="softAd">存在软广</label>
+            <input id="hardAd" type="radio" name="ad" value="none">
+            <label for="hardAd">存在硬广</label>
+        </div>
+        <div class="line">
+            <p>付费：</p>
+            <input id="free" type="radio" name="pay" value="none" checked>
+            <label for="free">免费</label>
+            <input id="softPay" type="radio" name="pay" value="none">
+            <label for="softPay">轻度付费</label>
+            <input id="hardPay" type="radio" name="pay" value="none">
+            <label for="hardPay">重度付费</label>
+        </div>
+        <div id="split-line"></div>
+        <input id="submit" type="submit">
+    </form>
+    <script src="../javascript/uploadScript.js"></script>
+</body>
+</html>
